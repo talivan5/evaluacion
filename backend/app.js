@@ -11,6 +11,15 @@ const postRoutes = require("./src/routes/postRoutes.js");
 const messageRoutes = require("./src/routes/messageRoutes.js");
 const winston = require("winston");
 const app = express();
+const cors = require('cors');
+
+const corsOptions = {
+  origin: '*', 
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], 
+  allowedHeaders: ['Content-Type', 'Authorization'] 
+};
+
+app.use(cors(corsOptions));
 
 app.use(helmet());
 app.use(express.json());
