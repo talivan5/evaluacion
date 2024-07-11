@@ -3,7 +3,6 @@ const { generateToken } = require("../config/jwt.js");
 
 exports.register = async (req, res) => {
   const { username, password } = req.body;
-  console.log(req.body);
   try {
     const existingUser = await User.findOne({ where: { username } });
     if (existingUser) {
