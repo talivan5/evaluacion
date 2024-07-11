@@ -1,0 +1,13 @@
+## Dependencias utilizadas para el proyecto backend
+- **express:** Framework para construir APIs.
+- **helmet:** Middleware para seguridad HTTP.
+- **morgan:** Middleware para registrar solicitudes HTTP.
+- **winston:** Biblioteca de registro de log.
+- **express-winston:** Integración de Winston con Express.
+- **sequelize:** ORM para bases de datos SQL.
+- **mysql2:** Cliente MySQL.
+- **dotenv:** Carga variables de entorno desde un archivo .env.
+- **jsonwebtoken:** Implementación de JSON Web Tokens.
+- **express-validator:** Middleware para validación de solicitudes.
+- **nodemon:** Herramienta que reinicia automáticamente la aplicación cuando se detectan cambios en los archivos (solo para desarrollo).
+- **bcrypt:** Encriptar contraseñas y verificar contraseñas encriptadas
