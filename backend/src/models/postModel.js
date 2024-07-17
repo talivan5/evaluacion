@@ -68,6 +68,11 @@ const Comment = sequelize.define('Comment', {
     type: DataTypes.DATE,
     allowNull: false,
     defaultValue: DataTypes.NOW
+  },
+  updatedAt: {
+    type: DataTypes.DATE,
+    allowNull: false,
+    defaultValue: DataTypes.NOW
   }
 }, {
   tableName: 'Comments'
@@ -89,6 +94,16 @@ const Like = sequelize.define('Like', {
       model: 'Users',
       key: 'id'
     }
+  },
+  createdAt: {
+    type: DataTypes.DATE,
+    allowNull: false,
+    defaultValue: DataTypes.NOW
+  },
+  updatedAt: {
+    type: DataTypes.DATE,
+    allowNull: false,
+    defaultValue: DataTypes.NOW
   }
 }, {
   tableName: 'Likes'
@@ -111,7 +126,12 @@ const Share = sequelize.define('Share', {
       key: 'id'
     }
   },
-  createdAt: {
+ createdAt: {
+    type: DataTypes.DATE,
+    allowNull: false,
+    defaultValue: DataTypes.NOW
+  },
+  updatedAt: {
     type: DataTypes.DATE,
     allowNull: false,
     defaultValue: DataTypes.NOW
